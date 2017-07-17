@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BackgroundHatchType_DashedVertical" xml:space="preserve">
+    <value>Dashed vertical</value>
+  </data>
+  <data name="MapPalettes_Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="TitleAlignment_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ChartFormulas_Performance" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="LineStyle_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="CapStyle_Rounded" xml:space="preserve">
+    <value>Rounded</value>
+  </data>
+  <data name="Shape_Circle" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="StateIndicatorIconsSet_RedToBlack" xml:space="preserve">
+    <value>Red to Black</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_LightArrowDownIncline" xml:space="preserve">
+    <value>LightArrowDownIncline</value>
+  </data>
+  <data name="BackgroundHatchType_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_SignalMeterOneFilled" xml:space="preserve">
+    <value>SignalMeterOneFilled</value>
+  </data>
+  <data name="NeedleStyle_StealthArrowWithTail" xml:space="preserve">
+    <value>Stealth arrow with tail</value>
+  </data>
+  <data name="StateIndicatorIconsSet_Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="Type_Marker" xml:space="preserve">
+    <value>Marker</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FiveRatings" xml:space="preserve">
+    <value>5 Ratings</value>
+  </data>
+  <data name="MapPointLabelPlacements_Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_StarQuartersOneFilled" xml:space="preserve">
+    <value>StarQuartersOneFilled</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_TriangleDash" xml:space="preserve">
+    <value>TriangleDash</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_TriangleDown" xml:space="preserve">
+    <value>TriangleDown</value>
+  </data>
+  <data name="BackgroundHatchType_Sphere" xml:space="preserve">
+    <value>Sphere</value>
+  </data>
+  <data name="BackgroundGradientType_LeftRight" xml:space="preserve">
+    <value>Left right</value>
+  </data>
+  <data name="GaugeBackgroundGradients_TopBottom" xml:space="preserve">
+    <value>Top bottom</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ArrowUpIncline" xml:space="preserve">
+    <value>ArrowUpIncline</value>
+  </data>
+  <data name="MarkerType_Square" xml:space="preserve">
+    <value>Square</value>
+  </data>
+  <data name="MarkerType_Star10" xml:space="preserve">
+    <value>10 point star</value>
+  </data>
+  <data name="Placement_Inside" xml:space="preserve">
+    <value>Inside</value>
+  </data>
+  <data name="FrameShape_Rectangular" xml:space="preserve">
+    <value>Rectangular</value>
+  </data>
+  <data name="BackgroundHatchType_LargeCheckerBoard" xml:space="preserve">
+    <value>Large checker board</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_Flag" xml:space="preserve">
+    <value>Flag</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_StarQuartersThreeFilled" xml:space="preserve">
+    <value>StarQuartersThreeFilled</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FourColoredArrows" xml:space="preserve">
+    <value>4 Arrows (Colored)</value>
+  </data>
+  <data name="Margin_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Margin_True" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="ChangeEditSelectionCommand" xml:space="preserve">
+    <value>Change Edit Selection</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_BoxesOneFilled" xml:space="preserve">
+    <value>BoxesOneFilled</value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeUpDownTriangles" xml:space="preserve">
+    <value>3 Up Down triangles</value>
+  </data>
+  <data name="Separator_DotLine" xml:space="preserve">
+    <value>Dot line</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularSE1" xml:space="preserve">
+    <value>Quarter-circular south-east 1</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularSE2" xml:space="preserve">
+    <value>Quarter-circular south-east 2</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularSE3" xml:space="preserve">
+    <value>Quarter-circular south-east 3</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularSE4" xml:space="preserve">
+    <value>Quarter-circular south-east 4</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularSW2" xml:space="preserve">
+    <value>Quarter-circular south-west 2</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularSW3" xml:space="preserve">
+    <value>Quarter-circular south-west 3</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularSW1" xml:space="preserve">
+    <value>Quarter-circular south-west 1</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularSW4" xml:space="preserve">
+    <value>Quarter-circular south-west 4</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularNW4" xml:space="preserve">
+    <value>Quarter-circular north-west 4</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularNW3" xml:space="preserve">
+    <value>Quarter-circular north-west 3</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularNW2" xml:space="preserve">
+    <value>Quarter-circular north-west 2</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularNW1" xml:space="preserve">
+    <value>Quarter-circular north-west 1</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularNE4" xml:space="preserve">
+    <value>Quarter-circular north-east 4</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularNE1" xml:space="preserve">
+    <value>Quarter-circular north-east 1</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularNE3" xml:space="preserve">
+    <value>Quarter-circular north-east 3</value>
+  </data>
+  <data name="FrameShape_CustomQuarterCircularNE2" xml:space="preserve">
+    <value>Quarter-circular north-east 2</value>
+  </data>
+  <data name="GaugeBackgroundGradients_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_BoxesNoneFilled" xml:space="preserve">
+    <value>BoxesNoneFilled</value>
+  </data>
+  <data name="Arrows_Triangle" xml:space="preserve">
+    <value>Triangle</value>
+  </data>
+  <data name="Layout_AutoTable" xml:space="preserve">
+    <value>Auto table</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ArrowDownIncline" xml:space="preserve">
+    <value>ArrowDownIncline</value>
+  </data>
+  <data name="BorderStyle_Solid" xml:space="preserve">
+    <value>Solid</value>
+  </data>
+  <data name="Arrows_SharpTriangle" xml:space="preserve">
+    <value>Sharp triangle</value>
+  </data>
+  <data name="SkinType_FrameTitle1" xml:space="preserve">
+    <value>Frame with title 1</value>
+  </data>
+  <data name="SkinType_FrameTitle2" xml:space="preserve">
+    <value>Frame with title 2</value>
+  </data>
+  <data name="SkinType_FrameTitle3" xml:space="preserve">
+    <value>Frame with title 3</value>
+  </data>
+  <data name="SkinType_FrameTitle4" xml:space="preserve">
+    <value>Frame with title 4</value>
+  </data>
+  <data name="SkinType_FrameTitle5" xml:space="preserve">
+    <value>Frame with title 5</value>
+  </data>
+  <data name="SkinType_FrameTitle6" xml:space="preserve">
+    <value>Frame with title 6</value>
+  </data>
+  <data name="SkinType_FrameTitle7" xml:space="preserve">
+    <value>Frame with title 7</value>
+  </data>
+  <data name="SkinType_FrameTitle8" xml:space="preserve">
+    <value>Frame with title 8</value>
+  </data>
+  <data name="MarkerType_Triangle" xml:space="preserve">
+    <value>Triangle</value>
+  </data>
+  <data name="Separator_ThickGradientLine" xml:space="preserve">
+    <value>Thick gradient line</value>
+  </data>
+  <data name="Palette_PacificSemiTransparent" xml:space="preserve">
+    <value>Pacific semitransparent</value>
+  </data>
+  <data name="VerticalAlign_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="MarkerStyle_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="MarkerStyle_Star" xml:space="preserve">
+    <value>Star</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FourGrayArrows" xml:space="preserve">
+    <value>4 Arrows (Gray)</value>
+  </data>
+  <data name="TextDecoration_Overline" xml:space="preserve">
+    <value>Overline</value>
+  </data>
+  <data name="CapStyle_RoundedWithIndentation" xml:space="preserve">
+    <value>Rounded with indentation </value>
+  </data>
+  <data name="Shape_Star" xml:space="preserve">
+    <value>Star</value>
+  </data>
+  <data name="Shape_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="LinearPointerType_Marker" xml:space="preserve">
+    <value>Marker</value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeRimmedTrafficLights" xml:space="preserve">
+    <value>3 Traffic Lights (Rimmed)</value>
+  </data>
+  <data name="NeedleStyle_StealthArrowWithWideTail" xml:space="preserve">
+    <value>Stealth arrow with wide tail</value>
+  </data>
+  <data name="GaugeBackgroundGradients_HorizontalCenter" xml:space="preserve">
+    <value>Horizontal center</value>
+  </data>
+  <data name="LabelBehavior_ShowMiddleValue" xml:space="preserve">
+    <value>Show middle value</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_LightArrowUpIncline" xml:space="preserve">
+    <value>LightArrowUpIncline</value>
+  </data>
+  <data name="Shape_Triangle" xml:space="preserve">
+    <value>Triangle</value>
+  </data>
+  <data name="Style_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GaugeBackgroundGradients_DiagonalLeft" xml:space="preserve">
+    <value>Diagonal left</value>
+  </data>
+  <data name="MapLineLabelPlacements_Below" xml:space="preserve">
+    <value>Below</value>
+  </data>
+  <data name="MapLineLabelPlacements_Above" xml:space="preserve">
+    <value>Above</value>
+  </data>
+  <data name="MapDataType_Boolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="Shape_Wedge" xml:space="preserve">
+    <value>Wedge</value>
+  </data>
+  <data name="BackgroundGradientType_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="MarkerStyle_Diamond" xml:space="preserve">
+    <value>Diamond</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ThreeSymbolExclamation" xml:space="preserve">
+    <value>ThreeSymbolExclamation</value>
+  </data>
+  <data name="TextDecoration_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="TextDecoration_LineThrough" xml:space="preserve">
+    <value>Strikethrough</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_LightArrowSide" xml:space="preserve">
+    <value>LightArrowSide</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_LightArrowDown" xml:space="preserve">
+    <value>LightArrowDown</value>
+  </data>
+  <data name="MapPointLabelPlacements_Right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeGrayArrows" xml:space="preserve">
+    <value>3 Arrows (Gray)</value>
+  </data>
+  <data name="_BorderStyle_Double" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="_BorderStyle_Dotted" xml:space="preserve">
+    <value>Dotted</value>
+  </data>
+  <data name="_BorderStyle_Dashed" xml:space="preserve">
+    <value>Dashed</value>
+  </data>
+  <data name="TextAlign_Center" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ThreeSignsDiamond" xml:space="preserve">
+    <value>ThreeSignsDiamond</value>
+  </data>
+  <data name="BackgroundHatchType_LightDownwardDiagonal" xml:space="preserve">
+    <value>Light downward diagonal</value>
+  </data>
+  <data name="NoneInBrackets" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="NeedleStyle_Arrow" xml:space="preserve">
+    <value>Arrow</value>
+  </data>
+  <data name="Type_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="BackgroundHatchType_DarkVertical" xml:space="preserve">
+    <value>Dark vertical</value>
+  </data>
+  <data name="FrameStyle_Simple" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="AllowLabelRotation_Rotate90" xml:space="preserve">
+    <value>90 degrees</value>
+  </data>
+  <data name="AllowLabelRotation_Rotate15" xml:space="preserve">
+    <value>15 degrees</value>
+  </data>
+  <data name="AllowLabelRotation_Rotate30" xml:space="preserve">
+    <value>30 degrees</value>
+  </data>
+  <data name="AllowLabelRotation_Rotate45" xml:space="preserve">
+    <value>45 degrees</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ThreeSymbolUnCircledExclamation" xml:space="preserve">
+    <value>ThreeSymbolUnCircledExclamation</value>
+  </data>
+  <data name="BorderStyle_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="MarkerStyle_Rectangle" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="MapMarkerStyles_Circle" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ButtonStop" xml:space="preserve">
+    <value>ButtonStop</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ButtonPlay" xml:space="preserve">
+    <value>ButtonPlay</value>
+  </data>
+  <data name="BackgroundHatchType_LightUpwardDiagonal" xml:space="preserve">
+    <value>Light upward diagonal</value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeSigns" xml:space="preserve">
+    <value>3 Signs </value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeStars" xml:space="preserve">
+    <value>3 Stars</value>
+  </data>
+  <data name="ChartFormulas_TriangularMovingAverage" xml:space="preserve">
+    <value>Triangular moving average</value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeFlags" xml:space="preserve">
+    <value>3 Flags </value>
+  </data>
+  <data name="Position_TopLeft" xml:space="preserve">
+    <value>Top left</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FiveQuarters" xml:space="preserve">
+    <value>5 Quarters</value>
+  </data>
+  <data name="BackgroundHatchType_OutlinedDiamond" xml:space="preserve">
+    <value>Outlined diamond</value>
+  </data>
+  <data name="LinearPointerType_Thermometer" xml:space="preserve">
+    <value>Thermometer</value>
+  </data>
+  <data name="MarkerType_Cross" xml:space="preserve">
+    <value>Cross</value>
+  </data>
+  <data name="BorderStyle_DashDot" xml:space="preserve">
+    <value>Dash-dot</value>
+  </data>
+  <data name="ChartFormulas_StandardDeviation" xml:space="preserve">
+    <value>Standard deviation</value>
+  </data>
+  <data name="LabelPosition_ThreeQuarters" xml:space="preserve">
+    <value>Three Quarters</value>
+  </data>
+  <data name="MarkerType_Star4" xml:space="preserve">
+    <value>4 point star</value>
+  </data>
+  <data name="MarkerType_Star5" xml:space="preserve">
+    <value>5 point star</value>
+  </data>
+  <data name="MarkerType_Star6" xml:space="preserve">
+    <value>6 point star</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FiveBlocks" xml:space="preserve">
+    <value>5 Blocks</value>
+  </data>
+  <data name="TransformationType_Percentage" xml:space="preserve">
+    <value>Percentage</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_QuartersOneFilled" xml:space="preserve">
+    <value>QuartersOneFilled</value>
+  </data>
+  <data name="Position_Right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="BackgroundGradientType_DiagonalLeft" xml:space="preserve">
+    <value>Diagonal left</value>
+  </data>
+  <data name="AlignOrientation_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="BackgroundHatchType_Shingle" xml:space="preserve">
+    <value>Shingle</value>
+  </data>
+  <data name="FrameShape_Circular" xml:space="preserve">
+    <value>Circular</value>
+  </data>
+  <data name="Projection_Mercator" xml:space="preserve">
+    <value>Mercator</value>
+  </data>
+  <data name="BackgroundHatchType_DarkHorizontal" xml:space="preserve">
+    <value>Dark horizontal</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_StarQuartersAllFilled" xml:space="preserve">
+    <value>StarQuartersAllFilled</value>
+  </data>
+  <data name="MapMarkerStyles_Rectangle" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="MapRuleDistributionTypes_Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="Style_DashDotDot" xml:space="preserve">
+    <value>Dash-dot-dot</value>
+  </data>
+  <data name="FrameStyle_Edged" xml:space="preserve">
+    <value>Edged</value>
+  </data>
+  <data name="FrameShape_AutoShape" xml:space="preserve">
+    <value>Auto shape</value>
+  </data>
+  <data name="ThermometerStyle_Standard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Position_Bottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="SkinType_Sunken" xml:space="preserve">
+    <value>Sunken</value>
+  </data>
+  <data name="Position_Center" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="TextAlign_Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="TextAlign_Near" xml:space="preserve">
+    <value>Near</value>
+  </data>
+  <data name="BackgroundHatchType_LargeConfetti" xml:space="preserve">
+    <value>Large confetti</value>
+  </data>
+  <data name="Layout_TallTable" xml:space="preserve">
+    <value>Tall table</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_FaceNeutral" xml:space="preserve">
+    <value>FaceNeutral</value>
+  </data>
+  <data name="BackgroundHatchType_DarkUpwardDiagonal" xml:space="preserve">
+    <value>Dark upward diagonal</value>
+  </data>
+  <data name="BorderStyle_Dashed" xml:space="preserve">
+    <value>Dashed</value>
+  </data>
+  <data name="BarStartType_ScaleStart" xml:space="preserve">
+    <value>ScaleStart</value>
+  </data>
+  <data name="BorderStyle_Double" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="BorderStyle_Dotted" xml:space="preserve">
+    <value>Dotted</value>
+  </data>
+  <data name="MapMarkerStyles_Diamond" xml:space="preserve">
+    <value>Diamond</value>
+  </data>
+  <data name="Projection_HammerAitoff" xml:space="preserve">
+    <value>HammerAitoff</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ThreeSymbolUnCircledCross" xml:space="preserve">
+    <value>ThreeSymbolUnCircledCross</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ThreeSymbolUnCircledCheck" xml:space="preserve">
+    <value>ThreeSymbolUnCircledCheck</value>
+  </data>
+  <data name="BackgroundGradientType_VerticalCenter" xml:space="preserve">
+    <value>Vertical center</value>
+  </data>
+  <data name="InsertItemCommand" xml:space="preserve">
+    <value>Insert '{0}' item</value>
+  </data>
+  <data name="BackgroundGradientType_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="MapDataType_Float" xml:space="preserve">
+    <value>Float</value>
+  </data>
+  <data name="ClearItemsCommand" xml:space="preserve">
+    <value>Clear '{0}' items</value>
+  </data>
+  <data name="LabelPlacement_Bottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="Position_Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="ChartFormulas_DetrendedPriceOscillator" xml:space="preserve">
+    <value>Detrended price oscillator</value>
+  </data>
+  <data name="SkinType_FrameThin3" xml:space="preserve">
+    <value>Thin frame 3</value>
+  </data>
+  <data name="SkinType_FrameThin2" xml:space="preserve">
+    <value>Thin frame 2</value>
+  </data>
+  <data name="SkinType_FrameThin1" xml:space="preserve">
+    <value>Thin frame 1</value>
+  </data>
+  <data name="SkinType_FrameThin6" xml:space="preserve">
+    <value>Thin frame 6</value>
+  </data>
+  <data name="SkinType_FrameThin5" xml:space="preserve">
+    <value>Thin frame 5</value>
+  </data>
+  <data name="SkinType_FrameThin4" xml:space="preserve">
+    <value>Thin frame 4</value>
+  </data>
+  <data name="Palette_Pacific" xml:space="preserve">
+    <value>Pacific</value>
+  </data>
+  <data name="Type_Outside" xml:space="preserve">
+    <value>Outside</value>
+  </data>
+  <data name="Shape_Diamond" xml:space="preserve">
+    <value>Diamond</value>
+  </data>
+  <data name="GaugeBackgroundGradients_Center" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="BackgroundHatchType_Trellis" xml:space="preserve">
+    <value>Trellis</value>
+  </data>
+  <data name="FrameShape_RoundedRectangular" xml:space="preserve">
+    <value>Rounded rectangular</value>
+  </data>
+  <data name="MapDataType_Integer" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="SkinType_Raised" xml:space="preserve">
+    <value>Raised</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ArrowDown" xml:space="preserve">
+    <value>ArrowDown</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ArrowSide" xml:space="preserve">
+    <value>ArrowSide</value>
+  </data>
+  <data name="Style_Dotted" xml:space="preserve">
+    <value>Dotted</value>
+  </data>
+  <data name="Style_Double" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="LineStyle_Solid" xml:space="preserve">
+    <value>Solid</value>
+  </data>
+  <data name="Style_Dashed" xml:space="preserve">
+    <value>Dashed</value>
+  </data>
+  <data name="CapStyle_RoundedWithAdditionalTop" xml:space="preserve">
+    <value>Rounded with additional top</value>
+  </data>
+  <data name="MapPointLabelPlacements_Center" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Palette_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="BackgroundHatchType_DottedDiamond" xml:space="preserve">
+    <value>Dotted diamond</value>
+  </data>
+  <data name="IntervalType_Days" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="IntervalType_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="MapPalettes_Pacific" xml:space="preserve">
+    <value>Pacific</value>
+  </data>
+  <data name="MapDataType_DateTime" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="BackgroundHatchType_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="MapPointLabelPlacements_Bottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="GaugeBackgroundGradients_StartToEnd" xml:space="preserve">
+    <value>Start to end</value>
+  </data>
+  <data name="MapMarkerStyles_Pentagon" xml:space="preserve">
+    <value>Pentagon</value>
+  </data>
+  <data name="MapPalettes_Random" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ArrowUp" xml:space="preserve">
+    <value>ArrowUp</value>
+  </data>
+  <data name="Type_Cross" xml:space="preserve">
+    <value>Cross</value>
+  </data>
+  <data name="NeedleStyle_TaperedWithStealthArrow" xml:space="preserve">
+    <value>Tapered with stealth arrow</value>
+  </data>
+  <data name="ProjectionMode_Oblique" xml:space="preserve">
+    <value>Oblique</value>
+  </data>
+  <data name="BackgroundHatchType_SmallCheckerBoard" xml:space="preserve">
+    <value>Small checker board</value>
+  </data>
+  <data name="BackgroundGradientType_Center" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="BorderStyles_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="NeedleStyle_StealthArrow" xml:space="preserve">
+    <value>Stealth arrow</value>
+  </data>
+  <data name="BackgroundHatchType_WideUpwardDiagonal" xml:space="preserve">
+    <value>Wide upward diagonal</value>
+  </data>
+  <data name="MarkerType_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="MarkerType_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_StarQuartersTwoFilled" xml:space="preserve">
+    <value>StarQuartersTwoFilled</value>
+  </data>
+  <data name="ChartFormulas_Median" xml:space="preserve">
+    <value>Median</value>
+  </data>
+  <data name="SkinType_Emboss" xml:space="preserve">
+    <value>Emboss</value>
+  </data>
+  <data name="Position_TopRight" xml:space="preserve">
+    <value>Top right</value>
+  </data>
+  <data name="Layout_WideTable" xml:space="preserve">
+    <value>Wide table</value>
+  </data>
+  <data name="ShowLabel_True" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="ShowLabel_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="GaugeBackgroundGradients_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="TextDecoration_Underline" xml:space="preserve">
+    <value>Underline</value>
+  </data>
+  <data name="Projection_Eckert1" xml:space="preserve">
+    <value>Eckert1</value>
+  </data>
+  <data name="Projection_Eckert3" xml:space="preserve">
+    <value>Eckert3</value>
+  </data>
+  <data name="Projection_Fahey" xml:space="preserve">
+    <value>Fahey</value>
+  </data>
+  <data name="Projection_Bonne" xml:space="preserve">
+    <value>Bonne</value>
+  </data>
+  <data name="NeedleStyle_Tapered" xml:space="preserve">
+    <value>Tapered</value>
+  </data>
+  <data name="Palette_GrayScale" xml:space="preserve">
+    <value>Gray scale</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_StarQuartersNoneFilled" xml:space="preserve">
+    <value>StarQuartersNoneFilled</value>
+  </data>
+  <data name="Position_Outside" xml:space="preserve">
+    <value>Outside</value>
+  </data>
+  <data name="Placement_Outside" xml:space="preserve">
+    <value>Outside</value>
+  </data>
+  <data name="BackgroundHatchType_NarrowVertical" xml:space="preserve">
+    <value>Narrow vertical</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_QuartersAllFilled" xml:space="preserve">
+    <value>QuartersAllFilled</value>
+  </data>
+  <data name="GaugeBackgroundGradients_VerticalCenter" xml:space="preserve">
+    <value>Vertical center</value>
+  </data>
+  <data name="MarkerStyle_Triangle" xml:space="preserve">
+    <value>Triangle</value>
+  </data>
+  <data name="BackgroundHatchType_DiagonalBrick" xml:space="preserve">
+    <value>Diagonal brick</value>
+  </data>
+  <data name="BackgroundHatchType_DiagonalCross" xml:space="preserve">
+    <value>Diagonal cross</value>
+  </data>
+  <data name="BackgroundHatchType_SolidDiamond" xml:space="preserve">
+    <value>Solid diamond</value>
+  </data>
+  <data name="BackgroundHatchType_SmallConfetti" xml:space="preserve">
+    <value>Small confetti</value>
+  </data>
+  <data name="TitleAlignment_Center" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="Palette_SeaGreen" xml:space="preserve">
+    <value>Sea green</value>
+  </data>
+  <data name="MapDataType_Decimal" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="MapField_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NeedleStyle_Rectangular" xml:space="preserve">
+    <value>Rectangular</value>
+  </data>
+  <data name="MapTileStyles_Aerial" xml:space="preserve">
+    <value>Aerial</value>
+  </data>
+  <data name="SetItemCommand" xml:space="preserve">
+    <value>Set '{0}' item</value>
+  </data>
+  <data name="LabelBehavior_ShowBorderValue" xml:space="preserve">
+    <value>Show border value</value>
+  </data>
+  <data name="BorderStyles_Solid" xml:space="preserve">
+    <value>Solid</value>
+  </data>
+  <data name="BackgroundHatchType_HorizontalBrick" xml:space="preserve">
+    <value>Horizontal brick</value>
+  </data>
+  <data name="Projection_Equirectangular" xml:space="preserve">
+    <value>Equirectangular</value>
+  </data>
+  <data name="Arrows_Lines" xml:space="preserve">
+    <value>Lines</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_SignalMeterTwoFilled" xml:space="preserve">
+    <value>SignalMeterTwoFilled</value>
+  </data>
+  <data name="BackgroundGradientType_DiagonalRight" xml:space="preserve">
+    <value>Diagonal right</value>
+  </data>
+  <data name="ChartFormulas_Mean" xml:space="preserve">
+    <value>Mean</value>
+  </data>
+  <data name="ChartFormulas_MACD" xml:space="preserve">
+    <value>MACD</value>
+  </data>
+  <data name="ChartFormulas_TRIX" xml:space="preserve">
+    <value>TRIX </value>
+  </data>
+  <data name="AlignOrientation_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ThreeSignsCircle" xml:space="preserve">
+    <value>ThreeSignsCircle</value>
+  </data>
+  <data name="Orientation_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="MarkerStyle_Pentagon" xml:space="preserve">
+    <value>Pentagon</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_Circle" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="ChartFormulas_BollingerBands" xml:space="preserve">
+    <value>Bollinger bands</value>
+  </data>
+  <data name="BackgroundHatchType_Plaid" xml:space="preserve">
+    <value>Plaid</value>
+  </data>
+  <data name="BackgroundHatchType_Weave" xml:space="preserve">
+    <value>Weave</value>
+  </data>
+  <data name="Margin_False" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="Projection_Wagner3" xml:space="preserve">
+    <value>Wagner3</value>
+  </data>
+  <data name="MapField_Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="BackgroundHatchType_Cross" xml:space="preserve">
+    <value>Cross</value>
+  </data>
+  <data name="BackgroundHatchType_Divot" xml:space="preserve">
+    <value>Divot</value>
+  </data>
+  <data name="SourceType_Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="FrameShape_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Projection_Robinson" xml:space="preserve">
+    <value>Robinson</value>
+  </data>
+  <data name="BackgroundHatchType_WideDownwardDiagonal" xml:space="preserve">
+    <value>Wide downward diagonal</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FourRatings" xml:space="preserve">
+    <value>4 Ratings</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_FaceSmile" xml:space="preserve">
+    <value>FaceSmile</value>
+  </data>
+  <data name="MapTileStyles_Hybrid" xml:space="preserve">
+    <value>Hybrid</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_FaceFrown" xml:space="preserve">
+    <value>FaceFrown</value>
+  </data>
+  <data name="BackgroundHatchType_DottedGrid" xml:space="preserve">
+    <value>Dotted grid</value>
+  </data>
+  <data name="Palette_EarthTones" xml:space="preserve">
+    <value>Earth tones</value>
+  </data>
+  <data name="ChartFormulas_Envelopes" xml:space="preserve">
+    <value>Envelopes</value>
+  </data>
+  <data name="SourceType_Embedded" xml:space="preserve">
+    <value>Embedded</value>
+  </data>
+  <data name="Style_Solid" xml:space="preserve">
+    <value>Solid</value>
+  </data>
+  <data name="MarkerStyle_Trapezoid" xml:space="preserve">
+    <value>Trapezoid</value>
+  </data>
+  <data name="NeedleStyle_Triangular" xml:space="preserve">
+    <value>Triangular</value>
+  </data>
+  <data name="Type_Bar" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="FrameShape_CustomCircular13" xml:space="preserve">
+    <value>Circular 13</value>
+  </data>
+  <data name="FrameShape_CustomCircular12" xml:space="preserve">
+    <value>Circular 12</value>
+  </data>
+  <data name="FrameShape_CustomCircular11" xml:space="preserve">
+    <value>Circular 11</value>
+  </data>
+  <data name="FrameShape_CustomCircular10" xml:space="preserve">
+    <value>Circular 10</value>
+  </data>
+  <data name="FrameShape_CustomCircular15" xml:space="preserve">
+    <value>Circular 15</value>
+  </data>
+  <data name="FrameShape_CustomCircular14" xml:space="preserve">
+    <value>Circular 14</value>
+  </data>
+  <data name="BackgroundHatchType_NarrowHorizontal" xml:space="preserve">
+    <value>Narrow horizontal</value>
+  </data>
+  <data name="FrameStyle_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="_BorderStyle_DashDot" xml:space="preserve">
+    <value>Dash-dot</value>
+  </data>
+  <data name="Orientation_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Arrows_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ChartFormulas_MovingAverage" xml:space="preserve">
+    <value>Moving average</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_SignalMeterFourFilled" xml:space="preserve">
+    <value>SignalMeterFourFilled</value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeCircledSymbols" xml:space="preserve">
+    <value>3 Symbols (Circled)</value>
+  </data>
+  <data name="LabelPosition_Center" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="ProjectionMode_Perspective" xml:space="preserve">
+    <value>Perspective</value>
+  </data>
+  <data name="GaugeBackgroundGradients_DiagonalRight" xml:space="preserve">
+    <value>Diagonal right</value>
+  </data>
+  <data name="BackgroundHatchType_Percent10" xml:space="preserve">
+    <value>10 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent30" xml:space="preserve">
+    <value>30 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent05" xml:space="preserve">
+    <value>5 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent50" xml:space="preserve">
+    <value>50 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent20" xml:space="preserve">
+    <value>20 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent25" xml:space="preserve">
+    <value>25 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent75" xml:space="preserve">
+    <value>75 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent70" xml:space="preserve">
+    <value>70 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent40" xml:space="preserve">
+    <value>40 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent90" xml:space="preserve">
+    <value>90 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent60" xml:space="preserve">
+    <value>60 percent</value>
+  </data>
+  <data name="BackgroundHatchType_Percent80" xml:space="preserve">
+    <value>80 percent</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_TrafficLightUnrimmed" xml:space="preserve">
+    <value>TrafficLightUnrimmed</value>
+  </data>
+  <data name="MapMarkerStyles_Trapezoid" xml:space="preserve">
+    <value>Trapezoid</value>
+  </data>
+  <data name="_BorderStyle_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Position_BottomLeft" xml:space="preserve">
+    <value>Bottom left</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_SignalMeterNoneFilled" xml:space="preserve">
+    <value>SignalMeterNoneFilled</value>
+  </data>
+  <data name="BackgroundGradientType_TopBottom" xml:space="preserve">
+    <value>Top bottom</value>
+  </data>
+  <data name="IntervalType_Milliseconds" xml:space="preserve">
+    <value>Milliseconds</value>
+  </data>
+  <data name="Placement_Cross" xml:space="preserve">
+    <value>Cross</value>
+  </data>
+  <data name="BarStartType_Zero" xml:space="preserve">
+    <value>Zero</value>
+  </data>
+  <data name="TextAlign_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeUnrimmedTrafficLights" xml:space="preserve">
+    <value>3 Traffic Lights (Unrimmed)</value>
+  </data>
+  <data name="CapStyle_RoundedLight" xml:space="preserve">
+    <value>Rounded light</value>
+  </data>
+  <data name="ThermometerStyle_Flask" xml:space="preserve">
+    <value>Flask</value>
+  </data>
+  <data name="Separator_DoubleLine" xml:space="preserve">
+    <value>Double line</value>
+  </data>
+  <data name="AlignOrientation_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="PropertyChangeCommand" xml:space="preserve">
+    <value>Change {0} {1}</value>
+  </data>
+  <data name="BodyHeightInvalid" xml:space="preserve">
+    <value>The Height property for the report Body is not valid. Verify that the value is greater than 0.</value>
+  </data>
+  <data name="SourceType_External" xml:space="preserve">
+    <value>External</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FiveColoredArrows" xml:space="preserve">
+    <value>5 Arrows (Colored)</value>
+  </data>
+  <data name="LabelBehavior_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ThreeSymbolCross" xml:space="preserve">
+    <value>ThreeSymbolCross</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ThreeSymbolCheck" xml:space="preserve">
+    <value>ThreeSymbolCheck</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FourTrafficLights" xml:space="preserve">
+    <value>4 Traffic Lights</value>
+  </data>
+  <data name="CapStyle_RoundedGlossyWithIndentation" xml:space="preserve">
+    <value>Rounded glossy with indentation</value>
+  </data>
+  <data name="LineStyle_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="VerticalAlign_Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_BoxesThreeFilled" xml:space="preserve">
+    <value>BoxesThreeFilled</value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeColoredArrows" xml:space="preserve">
+    <value>3 Arrows (Colored)</value>
+  </data>
+  <data name="IntervalType_Months" xml:space="preserve">
+    <value>Months</value>
+  </data>
+  <data name="_BorderStyle_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="MapPalettes_SemiTransparent" xml:space="preserve">
+    <value>Semi Transparent</value>
+  </data>
+  <data name="TransformationType_None" xml:space="preserve">
+    <value>Numeric</value>
+  </data>
+  <data name="MapRuleDistributionTypes_EqualDistribution" xml:space="preserve">
+    <value>Equal Distribution</value>
+  </data>
+  <data name="BorderStyle_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Palette_Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="NeedleStyle_TaperedWithTail" xml:space="preserve">
+    <value>Tapered with tail</value>
+  </data>
+  <data name="Position_BottomRight" xml:space="preserve">
+    <value>Bottom right</value>
+  </data>
+  <data name="LineStyle_DashDot" xml:space="preserve">
+    <value>Dash-dot</value>
+  </data>
+  <data name="AlignOrientation_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="CapStyle_FlattenedWithWideIndentation" xml:space="preserve">
+    <value>Flattened with wide indentation</value>
+  </data>
+  <data name="ChartFormulas_ExponentialMovingAverage" xml:space="preserve">
+    <value>Exponential moving average</value>
+  </data>
+  <data name="MapMarkerStyles_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="MapMarkerStyles_Star" xml:space="preserve">
+    <value>Star</value>
+  </data>
+  <data name="Palette_SemiTransparent" xml:space="preserve">
+    <value>Semitransparent</value>
+  </data>
+  <data name="BackgroundHatchType_LargeGrid" xml:space="preserve">
+    <value>Large grid</value>
+  </data>
+  <data name="IntervalType_Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="BackgroundHatchType_LightVertical" xml:space="preserve">
+    <value>Light vertical</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FiveGrayArrows" xml:space="preserve">
+    <value>5 Arrows (gray)</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_BoxesAllFilled" xml:space="preserve">
+    <value>BoxesAllFilled</value>
+  </data>
+  <data name="BackgroundHatchType_DashedHorizontal" xml:space="preserve">
+    <value>Dashed horizontal</value>
+  </data>
+  <data name="Palette_Chocolate" xml:space="preserve">
+    <value>Chocolate</value>
+  </data>
+  <data name="BackgroundHatchType_LightHorizontal" xml:space="preserve">
+    <value>Light horizontal</value>
+  </data>
+  <data name="BackgroundHatchType_Wave" xml:space="preserve">
+    <value>Wave</value>
+  </data>
+  <data name="BackgroundHatchType_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="MapMarkerStyles_PushPin" xml:space="preserve">
+    <value>PushPin</value>
+  </data>
+  <data name="ShowLabel_False" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Shape_Pentagon" xml:space="preserve">
+    <value>Pentagon</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_BoxesTwoFilled" xml:space="preserve">
+    <value>BoxesTwoFilled</value>
+  </data>
+  <data name="LineStyle_Double" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="LineStyle_Dotted" xml:space="preserve">
+    <value>Dotted</value>
+  </data>
+  <data name="LineStyle_Dashed" xml:space="preserve">
+    <value>Dashed</value>
+  </data>
+  <data name="MarkerStyle_Circle" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="MapMarkerStyles_Triangle" xml:space="preserve">
+    <value>Triangle</value>
+  </data>
+  <data name="MapPointLabelPlacements_Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="BackgroundHatchType_DashedDownwardDiagonal" xml:space="preserve">
+    <value>Dashed downward diagonal</value>
+  </data>
+  <data name="MapTileStyles_Road" xml:space="preserve">
+    <value>Road</value>
+  </data>
+  <data name="BackgroundHatchType_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="_BorderStyle_DashDotDot" xml:space="preserve">
+    <value>Dash-dot-dot</value>
+  </data>
+  <data name="CapStyle_RoundedWithWideIndentation" xml:space="preserve">
+    <value>Rounded with wide indentation</value>
+  </data>
+  <data name="BackgroundHatchType_SmallGrid" xml:space="preserve">
+    <value>Small grid</value>
+  </data>
+  <data name="BackgroundHatchType_ForwardDiagonal" xml:space="preserve">
+    <value>Forward diagonal</value>
+  </data>
+  <data name="TextDecoration_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="TitleAlignment_Right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="CapStyle_RoundedDark" xml:space="preserve">
+    <value>Rounded dark</value>
+  </data>
+  <data name="StateIndicatorIconsSet_ThreeUncircledSymbols" xml:space="preserve">
+    <value>3 Symbols (Uncircled)</value>
+  </data>
+  <data name="IntervalType_Minutes" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="MapPalettes_BrightPastel" xml:space="preserve">
+    <value>Bright Pastel</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_TriangleUp" xml:space="preserve">
+    <value>TriangleUp</value>
+  </data>
+  <data name="MapMarkerStyles_Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="Orientation_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="MapMarkerStyles_Wedge" xml:space="preserve">
+    <value>Wedge</value>
+  </data>
+  <data name="ChartFormulas_WeightedMovingAverage" xml:space="preserve">
+    <value>Weighted moving average</value>
+  </data>
+  <data name="LineStyle_DashDotDot" xml:space="preserve">
+    <value>Dash-dot-dot</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ThreeSignsTriangle" xml:space="preserve">
+    <value>ThreeSignsTriangle</value>
+  </data>
+  <data name="CapStyle_FlattenedWithIndentation" xml:space="preserve">
+    <value>Flattened with indentation</value>
+  </data>
+  <data name="Separator_DashLine" xml:space="preserve">
+    <value>Dash line</value>
+  </data>
+  <data name="MapAutoBools_True" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="MapAutoBools_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_QuartersNoneFilled" xml:space="preserve">
+    <value>QuartersNoneFilled</value>
+  </data>
+  <data name="Shape_Rectangle" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_TrafficLight" xml:space="preserve">
+    <value>TrafficLight</value>
+  </data>
+  <data name="MapRuleDistributionTypes_Optimal" xml:space="preserve">
+    <value>Optimal</value>
+  </data>
+  <data name="TextAlign_Far" xml:space="preserve">
+    <value>Far</value>
+  </data>
+  <data name="MapLineLabelPlacements_Center" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="MarkerType_Diamond" xml:space="preserve">
+    <value>Diamond</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_ButtonPause" xml:space="preserve">
+    <value>ButtonPause</value>
+  </data>
+  <data name="FrameShape_CustomCircular8" xml:space="preserve">
+    <value>Circular 8</value>
+  </data>
+  <data name="FrameShape_CustomCircular9" xml:space="preserve">
+    <value>Circular 9</value>
+  </data>
+  <data name="FrameShape_CustomCircular2" xml:space="preserve">
+    <value>Circular 2</value>
+  </data>
+  <data name="FrameShape_CustomCircular3" xml:space="preserve">
+    <value>Circular 3</value>
+  </data>
+  <data name="FrameShape_CustomCircular1" xml:space="preserve">
+    <value>Circular 1</value>
+  </data>
+  <data name="FrameShape_CustomCircular6" xml:space="preserve">
+    <value>Circular 6</value>
+  </data>
+  <data name="FrameShape_CustomCircular7" xml:space="preserve">
+    <value>Circular 7</value>
+  </data>
+  <data name="FrameShape_CustomCircular4" xml:space="preserve">
+    <value>Circular 4</value>
+  </data>
+  <data name="FrameShape_CustomCircular5" xml:space="preserve">
+    <value>Circular 5</value>
+  </data>
+  <data name="Palette_Berry" xml:space="preserve">
+    <value>Berry</value>
+  </data>
+  <data name="Palette_Excel" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="VerticalAlign_Bottom" xml:space="preserve">
+    <value>Bottom </value>
+  </data>
+  <data name="Palette_Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="LabelPosition_Far" xml:space="preserve">
+    <value>Far </value>
+  </data>
+  <data name="Style_DashDot" xml:space="preserve">
+    <value>Dash-dot</value>
+  </data>
+  <data name="NeedleStyle_ArrowWithTail" xml:space="preserve">
+    <value>Arrow with tail</value>
+  </data>
+  <data name="MapAutoBools_False" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="BackgroundHatchType_DarkDownwardDiagonal" xml:space="preserve">
+    <value>Dark downward diagonal</value>
+  </data>
+  <data name="BackgroundHatchType_BackwardDiagonal" xml:space="preserve">
+    <value>Backward diagonal</value>
+  </data>
+  <data name="TextAlign_Right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="BorderStyle_DashDotDot" xml:space="preserve">
+    <value>Dash-dot-dot</value>
+  </data>
+  <data name="Separator_ThickLine" xml:space="preserve">
+    <value>Thick line</value>
+  </data>
+  <data name="Layout_Column" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="MapRuleDistributionTypes_EqualInterval" xml:space="preserve">
+    <value>Equal Interval</value>
+  </data>
+  <data name="AllowLabelRotation_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="LabelPlacement_Alternate" xml:space="preserve">
+    <value>Alternate</value>
+  </data>
+  <data name="Style_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Separator_GradientLine" xml:space="preserve">
+    <value>Gradient line</value>
+  </data>
+  <data name="Palette_Pastel" xml:space="preserve">
+    <value>Pastel</value>
+  </data>
+  <data name="LabelPosition_Near" xml:space="preserve">
+    <value>Near</value>
+  </data>
+  <data name="IntervalType_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="ChartFormulas_RelativeStrengthIndex" xml:space="preserve">
+    <value>Relative strength index</value>
+  </data>
+  <data name="BackgroundGradientType_HorizontalCenter" xml:space="preserve">
+    <value>Horizontal center</value>
+  </data>
+  <data name="VerticalAlign_Middle" xml:space="preserve">
+    <value>Middle</value>
+  </data>
+  <data name="MarkerStyle_Wedge" xml:space="preserve">
+    <value>Wedge</value>
+  </data>
+  <data name="BackgroundHatchType_ZigZag" xml:space="preserve">
+    <value>Zig-zag</value>
+  </data>
+  <data name="_BorderStyle_Solid" xml:space="preserve">
+    <value>Solid</value>
+  </data>
+  <data name="Shape_Trapezoid" xml:space="preserve">
+    <value>Trapezoid</value>
+  </data>
+  <data name="LabelPlacement_Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="IntervalType_Seconds" xml:space="preserve">
+    <value>Seconds</value>
+  </data>
+  <data name="MarkerType_Circle" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="Palette_BrightPastel" xml:space="preserve">
+    <value>Bright pastel</value>
+  </data>
+  <data name="NeedleStyle_TaperedWithRoundedPoint" xml:space="preserve">
+    <value>Tapered with rounded point</value>
+  </data>
+  <data name="CrossAt_Min" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="CrossAt_Max" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="BorderStyles_Dotted" xml:space="preserve">
+    <value>Dotted</value>
+  </data>
+  <data name="BorderStyles_Double" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="LabelPosition_OneQuarter" xml:space="preserve">
+    <value>One Quarter</value>
+  </data>
+  <data name="BorderStyles_Dashed" xml:space="preserve">
+    <value>Dashed</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_QuartersTwoFilled" xml:space="preserve">
+    <value>QuartersTwoFilled</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularS3" xml:space="preserve">
+    <value>Semi-circular south 3</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularS2" xml:space="preserve">
+    <value>Semi-circular south 2</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularS1" xml:space="preserve">
+    <value>Semi-circular south 1</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularS4" xml:space="preserve">
+    <value>Semi-circular south 4</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularW4" xml:space="preserve">
+    <value>Semi-circular west 4</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularW3" xml:space="preserve">
+    <value>Semi-circular west 3</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularW2" xml:space="preserve">
+    <value>Semi-circular west 2</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularW1" xml:space="preserve">
+    <value>Semi-circular west 1</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularN4" xml:space="preserve">
+    <value>Semi-circular north 4</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularN2" xml:space="preserve">
+    <value>Semi-circular north 2</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularN3" xml:space="preserve">
+    <value>Semi-circular north 3</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularN1" xml:space="preserve">
+    <value>Semi-circular north 1</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularE4" xml:space="preserve">
+    <value>Semi-circular east 4</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularE1" xml:space="preserve">
+    <value>Semi-circular east 1</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularE3" xml:space="preserve">
+    <value>Semi-circular east 3</value>
+  </data>
+  <data name="FrameShape_CustomSemiCircularE2" xml:space="preserve">
+    <value>Semi-circular east 2</value>
+  </data>
+  <data name="MapDataType_String" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="IntervalType_Years" xml:space="preserve">
+    <value>Years</value>
+  </data>
+  <data name="IntervalType_Weeks" xml:space="preserve">
+    <value>Weeks</value>
+  </data>
+  <data name="IntervalType_Hours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="ChartFormulas_RateOfChange" xml:space="preserve">
+    <value>Rate of change</value>
+  </data>
+  <data name="BackgroundHatchType_DashedUpwardDiagonal" xml:space="preserve">
+    <value>Dashed upward diagonal</value>
+  </data>
+  <data name="TextAlign_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Position_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Position_Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="Separator_Line" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="Separator_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Layout_Row" xml:space="preserve">
+    <value>Row</value>
+  </data>
+  <data name="BorderStyles_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="LinearPointerType_Bar" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="Palette_Fire" xml:space="preserve">
+    <value>Fire</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_LightArrowUp" xml:space="preserve">
+    <value>LightArrowUp</value>
+  </data>
+  <data name="GaugeBackgroundGradients_LeftRight" xml:space="preserve">
+    <value>Left right</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_QuartersThreeFilled" xml:space="preserve">
+    <value>QuartersThreeFilled</value>
+  </data>
+  <data name="TitleAlignment_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="RemoveItemCommand" xml:space="preserve">
+    <value>Remove '{0}' item</value>
+  </data>
+  <data name="StateIndicatorIconsSet_FiveStars" xml:space="preserve">
+    <value>5 Stars</value>
+  </data>
+  <data name="Type_Needle" xml:space="preserve">
+    <value>Needle</value>
+  </data>
+  <data name="Palette_PacificLight" xml:space="preserve">
+    <value>Pacific light</value>
+  </data>
+  <data name="Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GaugeStateIndicatorStyles_SignalMeterThreeFilled" xml:space="preserve">
+    <value>SignalMeterThreeFilled</value>
+  </data>
+  <data name="SkinType_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Type_Inside" xml:space="preserve">
+    <value>Inside</value>
+  </data>
+  <data name="TitleAlignment_Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="ColumnGroupTitle" xml:space="preserve">
+    <value>Column Group</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>{0} Group</value>
+  </data>
+  <data name="RowGroupTitle" xml:space="preserve">
+    <value>Row Group</value>
+  </data>
+</root>

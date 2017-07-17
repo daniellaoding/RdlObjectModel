@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89180319-0D72-464F-9142-7ECBD6591978}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft</RootNamespace>
+    <AssemblyName>RdlObjectModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ReportingServices\Common\ArrayUtil.cs" />
+    <Compile Include="ReportingServices\Common\StringUtil.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\AccentSensitivities.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Action.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ActionInfo.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\AltReportItem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\AntiAliasingTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ArgumentConstraintException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ArgumentTooLargeException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ArgumentTooSmallException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BackFrame.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BackgroundGradients.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BackgroundHatchTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BackgroundImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BackgroundPositions.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BackgroundRepeatTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BarStartTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BaseGaugeImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Body.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Border.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BorderSide.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BorderStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\BreakLocations.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Calendars.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CapImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CapStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CaseSensitivities.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CellContents.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CellDefinition.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Chart.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartAlignOrientations.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartAlignType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartAllowOutSidePlotAreaTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartArea.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartArrowsTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartAxis.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartAxisLocations.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartAxisMarginVisibleTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartAxisScaleBreak.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartAxisTitle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartAxisTitlePositions.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartBorderSkin.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartBorderSkinTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartBreakLineTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartCalloutLineAnchorTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartCalloutLineStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartCalloutStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartCategoryHierarchy.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartCodeParameter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartColumnSeparatorTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartData.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartDataLabel.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartDataLabelPositions.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartDataPoint.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartDataPointValues.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartDerivedSeries.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartElementPosition.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartEmptyPoints.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartFormulaParameter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartFormulas.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartGridLines.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartGridLinesEnabledTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartHeaderSeparatorTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartIncludeZeroTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartIntervalOffsetTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartIntervalTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartItemInLegend.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLabelRotationTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegend.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendColumn.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendColumnHeader.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendColumnTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendCustomItem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendCustomItemCell.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendItemAlignmentTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendItemCellTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendItemSeparatorTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendLayouts.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendReversedTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartLegendTitle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartMarker.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartMarkerTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartMember.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartNoMoveDirections.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartPaletteHatchBehaviorTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartPalettes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartPositions.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartProjectionModes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartSeries.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartSeriesDrawingStyle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartSeriesHierarchy.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartShadings.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartSmartLabel.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartStripLine.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartStripWidthTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartSubtypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartThreeDProperties.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartTickMarks.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartTickMarksEnabledTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartTickMarkTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartTitle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartTitleSeparatorTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ChartVisibleTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Class.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CodeObject.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ColorProperty.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CommandTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ComparablePropertyDefinition.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ComponentMetadata.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ConnectionProperties.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Constants.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ContainedObject.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CustomData.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CustomLabel.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CustomProperty.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\CustomReportItem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataCell.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataCellScopeServiceImpl.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataElementOutputTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataElementStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataHierarchy.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataMember.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataRegion.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataRegionBody.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataRegionCell.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataRegionPlaceholder.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataRow.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataSet.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataSetBase.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataSetInfo.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataSetReference.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataSource.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataSourceCredentialRetrievalEnum.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DataValue.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Defaults.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DefaultValue.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DefaultValueConstantAttribute.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DefinitionStore.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DesignerPropertyStore.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\DoubleProperty.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Drillthrough.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\EmbeddedImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\EmptyBorder.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\EmptyColorStyle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\EnumNamesAttribute.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\EnumProperty.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\EvaluationMode.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\BaseInternalExpression.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\CharReader.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\Constant.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantBoolean.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantChar.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantDateTime.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantDecimal.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantDouble.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantInteger.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantLong.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantNonExpression.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantShort.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantSingle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ConstantString.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\CreateDrillthroughContext.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\DefaultEnvironmentFilter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\EnumSystem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\EnvironmentContext.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\Expression.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionAggregateType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionFactory.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionParser.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionParserException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionParserInvalidArrayTypeException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionParserInvalidMemberNameException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionParserInvalidNewTypeException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionParserInvalidTypeNameException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionParserTags.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionParserUnknownIdentifierException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionSubType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionToken.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ExpressionValidationContext.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FieldPropertiesTags.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggr.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrAggregate.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrAvg.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrCount.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrCountDistinct.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrCountRows.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrFirst.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrInScope.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrLast.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrLevel.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrMax.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrMin.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrPrev.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrRowNumber.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrRunningValue.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrStandard.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrStdev.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrStdevp.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrSum.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrVar.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionAggrVarp.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionArrayInit.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionArrayType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionBinary.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionConcatenate.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionCustomInstance.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionCustomStatic.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionDataSet.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionDataSetsCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionDataSource.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionDataSourcesCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionDefaultPropertyOrIndexer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionDictionaryAccessor.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionDiv.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionDivDecimal.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionExecutionTime.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionExp.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionField.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionFieldsCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionGlobal.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionGlobalsCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionIntDiv.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionLateBoundAccessor.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionLogicAnd.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionLogicAndAlso.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionLogicNot.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionLogicOr.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionLogicOrElse.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionLogicXor.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionLookup.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionLookupSet.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionMaxValue.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionMemberField.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionMethodOrProperty.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionMinus.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionMinValue.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionModulus.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionMult.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionMultiArgument.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionMultiLookup.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionNewArray.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionNewObject.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionNothing.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionOverallPageNumber.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionOverallTotalPages.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionPageName.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionPageNumber.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionParametersCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionPlus.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalEqual.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalGreaterThan.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalGreaterThanEqual.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalIs.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalIsNot.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalLessThan.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalLessThanEqual.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalLike.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalNotEqual.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRelationalTypeOf.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionRenderFormat.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionReportFolder.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionReportItemsCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionReportName.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionReportParameter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionReportServerUrl.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionShiftLeft.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionShiftRight.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionSystem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionTextbox.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionTotalPages.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionUnary.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionUnaryMinus.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionUnaryMinusInteger.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionUnaryPlus.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionUnaryPlusInteger.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionUser.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionUserCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionUserID.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionUserLanguage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionVariable.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\FunctionVariablesCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\IComplexRdlCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\Identifier.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\IEnvironmentFilter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\IIdentifiable.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\IInternalExpression.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\IInternalNamedExpression.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\IReportLink.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ISimpleRdlCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\LateBoundContext.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\Lexer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\LookupContext.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\MemberContext.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\NamespaceContext.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ObjectDependency.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ProcessInternalExpressionHandler.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlArgTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlDataSetsCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlDataSourcesCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlFieldsCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlFunctionArg.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlFunctionDefinition.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlGlobalsCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlParametersCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlRenderFormatCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlReportItemsCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlUsersCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RDLUtil.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RdlVariablesCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\Recursive.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\RecursiveOption.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportElementType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModelContext.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\DataSet.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\DataSets.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\DataSource.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\DataSources.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\Field.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\Fields.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\Globals.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\ObjectModel.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\Parameter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\Parameters.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\ReportItem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\ReportItems.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\User.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\Variable.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\ReportObjectModel\Variables.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\StringUtil.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\TokenList.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\TokenTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\TypeContext.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExpressionParser\VBFunctions.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Expression\RDLExceptionHelper.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ExternalXmlElement.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Field.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Filter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\FontStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\FontWeights.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\FormulaTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\FrameBackground.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\FrameImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\FrameShapes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\FrameStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Gauge.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeBackgroundGradients.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeInputValue.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeLabel.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeMember.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugePanel.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugePanelItem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugePointer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeScale.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeShowSigns.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeStateIndicatorStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeTickMarks.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GaugeTransformationType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GlassEffects.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\GridLayoutDefinition.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Group.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\HierarchyMember.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IContainedObject.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IDataCell.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IDataCellScopeService.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IDataScope.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IDataScopeService.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IExpression.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IGlobalNamedObject.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IHierarchy.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IHierarchyMember.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Image.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ImageData.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\INamedObject.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IndicatorImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IndicatorState.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\InternalConstants.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\InterpretSubtotalsAsDetailsTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IntProperty.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\InvalidReportException.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IPropertyDefinition.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IPropertyStore.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\IReportData.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ItemBorderColor.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ItemBorderStyle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ItemBorderWidth.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\KanatypeSensitivities.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\KeepWithGroupTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\LayoutDirections.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Line.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\LinearGauge.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\LinearPointer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\LinearPointerTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\LinearScale.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ListStyle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Map.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapAntiAliasings.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapAppearanceRule.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapAutoBools.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapBindingFieldPair.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapBorderSkin.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapBorderSkinTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapBucket.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapColorPaletteRule.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapColorRangeRule.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapColorRule.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapColorScale.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapColorScaleTitle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapCoordinateSystems.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapCustomColorRule.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapCustomView.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapDataBoundView.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapDataRegion.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapDataTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapDistanceScale.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapDockableSubItem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapElementView.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapField.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapFieldDefinition.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapGridLines.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapGridlinesTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLabelBehaviors.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLabelPlacements.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLabelPositions.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLayer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLegend.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLegendLayouts.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLegendTitle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLegendTitleSeparators.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLimits.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLine.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLineLabelPlacements.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLineLayer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLineRules.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLineTemplate.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapLocation.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapMarker.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapMarkerImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapMarkerRule.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapMarkerStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapMarkerTemplate.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapMember.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPalettes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPoint.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPointLabelPlacements.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPointLayer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPointRules.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPointTemplate.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPolygon.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPolygonLabelPlacements.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPolygonLayer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPolygonRules.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPolygonTemplate.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapPositions.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapProjections.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapResizeModes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapRuleDistributionTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapShapefile.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapSize.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapSizeRule.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapSpatialData.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapSpatialDataRegion.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapSpatialDataSet.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapSpatialElement.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapSpatialElementTemplate.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapSubItem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapTextAntiAliasingQualities.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapTile.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapTileLayer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapTileStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapTitle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapUnits.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapVectorLayer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapView.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapViewport.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MapVisibilityModes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MarkerStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MarkupType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MetadataProperties.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MetadataProperty.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MetadataValue.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\MetadataValues.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\NameChanges.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\NeedleStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\NumericIndicator.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\NumericIndicatorRange.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\NumericIndicatorStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Operators.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Orientations.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Padding.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Page.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PageBreak.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PageSection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Paragraph.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Parameter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ParameterValue.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PinLabel.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PlaceholderStyle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Placements.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PointerCap.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PointerImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PropertyDefinition.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PropertyDefinition`1.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PropertyGridUtils.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\PropertyStore.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Query.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\QueryBase.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\QueryParameter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\RadialGauge.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\RadialPointer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\RadialPointerTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\RadialScale.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\RdlCollectionBase.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\RdlCollection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Rectangle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Report.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportColor.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportColorConverter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportElement.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportEnum.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportExpression.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportExpressionDefaultValueAttribute.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportExpressionDefaultValueConstantAttribute.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportExpressionUtils.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportExpressionGeneric.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportItem.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportObject.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportObjectBase.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportParameter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportParametersLayout.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportSection.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportSize.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ReportSizeConverter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ResizeModes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ScaleLabels.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ScalePin.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ScaleRange.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SecurityTypeEnum.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\ArrayMapping.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\ExtensionNamespace.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\ISerializerHost.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\IShouldSerialize.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\MemberMapping.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\NameKey.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\NamespaceUpdater.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\NameTable.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\PrimitiveMapping.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\PropertyMapping.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\RdlReader.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\RdlReaderWriterBase.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\RdlSerializer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\RdlSerializerSettings.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\RdlWriter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\SerializationMethod.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\SpecialMapping.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\StructMapping.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\TypeMapper.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\TypeMapping.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\XmlChildAttributeAttribute.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\XmlCustomFormatter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Serialization\XmlElementClassAttribute.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SerializerHost.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SharedDataSet.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SharedDataSets\DataSet.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SharedDataSets\DataSetParameter.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SharedDataSets\Query.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SharedDataSets\SharedDataSet.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SizeProperty.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SizeTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Sizings.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SortDirections.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SortExpression.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SourceType.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\SRErrors1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SRErrors.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportingServices\RdlObjectModel\SRRdl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SRRdl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportingServices\RdlObjectModel\StateIndicator.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\StateIndicatorIconsSet.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\StringProperty.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Style.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Subreport.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Tablix.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixBody.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixCell.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixColumn.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixCorner.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixCornerCell.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixCornerRow.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixHeader.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixHierarchy.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixMember.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TablixRow.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TextAlignments.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TextAntiAliasingQualityTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Textbox.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TextDecorations.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TextDirections.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TextEffects.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TextOrientations.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TextRun.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Thermometer.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ThermometerStyles.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TickMarkImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TickMarkStyle.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ToggleImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\TopImage.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\UnicodeBiDiTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Units.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\UsedInQueryTypes.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\UserSort.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Utils.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ValidEnumValuesAttribute.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ValidValues.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\ValidValuesAttribute.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Variable.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\VectorData.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\VerticalAlignments.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\Visibility.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\VisitPropertyObject.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\WatermarkText.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\WidthSensitivities.cs" />
+    <Compile Include="ReportingServices\RdlObjectModel\WritingModes.cs" />
+    <Compile Include="ReportingServices\ReportProcessing\RDLValidatingReaderStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RDLValidatingReaderStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportingServices\ReportProcessing\RdlValidator.cs" />
+    <Compile Include="ReportingServices\ReportProcessing\RdlXmlUtils.cs" />
+    <Compile Include="ReportingServices\RichText\IParagraphProps.cs" />
+    <Compile Include="ReportingServices\RPLObjectModel\RPLFormat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ReportingServices\RdlObjectModel\SRErrors.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SRErrors1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportingServices\RdlObjectModel\SRRdl.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SRRdl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportingServices\ReportProcessing\RDLValidatingReaderStrings.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RDLValidatingReaderStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ReportingServices\RdlObjectModel\Serialization\ReportDefinition.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
